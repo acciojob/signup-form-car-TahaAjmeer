@@ -7,10 +7,57 @@
 </head>
 
 <body>
+	<h1>Signup From Car</h1>
+	<form method="post" action="#">
+		<div>
+			<label for="name">Name*</label><br>
+			<input type="text" name="name" id="name" placeholder="Name" required>
+		</div><br>
+		<div>
+			<label for="email">Email*</label>
+			<input type="email" name="email" id="email" placeholder=Email required>
+		</div><br>
+		<div>
+			<label for="gender">Gender*</label><br>
+			<input type="radio" name="gender" value="Male" id="gender_m" required>Male
+			<input type="radio" name="gender" value="Female" id="gender_f" required>Female
+		</div><br>
+		<div>
+			<label for="cars">Car Brands</label>
+			<select id="cars" name="cars">
+				<option value="" disabled selected>--Please choose an option--</option>
+				<option value="BMW">BMW</option>
+				<option value="Audi">Audi</option>
+				<option value="Mercedez">Mercedez</option>
+			</select>
+		</div><br>
+		<div>
+			<label for="age">Age*</label>
+			<input type="number" name="age" id=age placeholder="Age" required>
+		</div><br>
+		<div>
+			<label for="dob">DOB*</label>
+			<input type="date" name="dob" id="dob" placeholder="write your date of birth" required>
+		</div><br>
+		<div>
+			<label for="tel">Phone Number*</label>
+			<input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xxxx" required>
+		</div><br>
+		<div>
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" placeholder="Password" required>
+		</div><br>
+		<div>
+<!-- 			<label for="tos">checkbox</label><br> -->
+			<input type="checkbox" name="tos" id="tos" required>I agree to the TOS 
+		</div><br>
+		<div>
+			<button type="submit">submit</button>
+		</div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
+	</form>
 </body>
 
 </html>
